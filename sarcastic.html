@@ -1,177 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Here We Go Again...</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f3f4f6;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:30px;
-}
-
-.card{
-    max-width:900px;
-    width:100%;
-    background:white;
-    border-radius:20px;
-    padding:40px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-}
-
-.badge{
-    display:inline-block;
-    background:#ffe4e6;
-    color:#dc2626;
-    padding:8px 16px;
-    border-radius:20px;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-
-h1{
-    font-size:3.5rem;
-    color:#222;
-    margin-bottom:15px;
-}
-
-.subtitle{
-    font-size:1.3rem;
-    color:#666;
-    margin-bottom:35px;
-}
-
-.sideeye{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-bottom:35px;
-}
-
-.sideeye img{
-    width:240px;
-    height:240px;
-    object-fit:cover;
-    border-radius:15px;
-    transition:0.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-.sideeye img:hover{
-    transform:scale(1.05) rotate(-2deg);
-}
-
-.quote{
-    background:#fff7ed;
-    border-left:6px solid #f97316;
-    padding:20px;
-    border-radius:10px;
-    font-size:1.8rem;
-    font-weight:bold;
-    color:#444;
-    margin-bottom:20px;
-}
-
-.counter{
-    background:#111827;
-    color:white;
-    border-radius:12px;
-    padding:20px;
-    margin-top:25px;
-}
-
-.counter h2{
-    font-size:1rem;
-    color:#9ca3af;
-    margin-bottom:10px;
-}
-
-.number{
-    font-size:4rem;
-    color:#f87171;
-    font-weight:bold;
-}
-
-.footer{
-    margin-top:25px;
-    color:#888;
-    font-style:italic;
-}
-
-@media(max-width:768px){
-    h1{
-        font-size:2.2rem;
-    }
-
-    .quote{
-        font-size:1.2rem;
-    }
-
-    .sideeye img{
-        width:180px;
-        height:180px;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh, Look. Another Website.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="card">
+    <div class="card">
+        <h1>Wow. You clicked a link.</h1>
+        <p class="subtitle">We are all incredibly proud of your ability to interact with a screen. Truly, an inspiration.</p>
+        
+        <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=600&auto=format&fit=crop" alt="Person giving massive side eye">
+        </div>
 
-    <div class="badge">
-        ⚠ New Request Detected
+        <p>Feel free to scroll around and accomplish absolutely nothing. Or, click the highly critical button below to waste another two seconds.</p>
+        
+        <button class="action-btn" onclick="alert('Are you feeling fulfilled yet?')">Useless Button</button>
     </div>
 
-    <h1>Yow...</h1>
-
-    <p class="subtitle">
-        What do you want to trouble me with this time?
-    </p>
-
-    <div class="sideeye">
-        <img src="https://picsum.photos/300?random=1" alt="Side Eye 1">
-        <img src="https://picsum.photos/300?random=2" alt="Side Eye 2">
-        <img src="https://picsum.photos/300?random=3" alt="Side Eye 3">
-    </div>
-
-    <div class="quote">
-        "I'm sure this request will be completely reasonable."
-    </div>
-
-    <div class="counter">
-        <h2>Problems Created Today</h2>
-        <div class="number" id="problemCount">0</div>
-    </div>
-
-    <div class="footer">
-        *opens ticket reluctantly*
-    </div>
-
-</div>
-
-<script>
-let count = 0;
-const counter = document.getElementById("problemCount");
-
-setInterval(() => {
-    count++;
-    counter.textContent = count;
-}, 1500);
-</script>
+    <footer>
+        &copy; 2026 Boredom Inc. All rights thoroughly ignored.
+    </footer>
 <elevenlabs-convai agent-id="agent_0801kwb9bjjdf8ssyqr6jfzx3h5h"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
 </body>
 </html>
